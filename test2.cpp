@@ -19,7 +19,7 @@ int  main() {
     pv = pd;
     cout << pv << " and " << pd << endl;
     cout << " and " << *pd << endl; */
-    int ival = 1024;
+/*     int ival = 1024;
     int *pi = &ival;
     int **ppi = &pi;
     cout << pi << " and " << ppi << endl;
@@ -30,13 +30,11 @@ int  main() {
     cout << *p << " and " << *r << endl;
     *r = 0;
     cout << *p << " and " << *r << endl;
-    const int bufSize = 512;
+    const int bufSize = 512; */
 
-    struct Sales_data{
-        string bookNo;
-        unsigned units_sold = 0;
-        double revenue = 0.0;
-    };
-
-
+    string s("Hello world!!");
+    for (auto &c : s)
+        c = toupper(c);
+    cout << s << endl;
+    cout << "End" << endl;
 }
