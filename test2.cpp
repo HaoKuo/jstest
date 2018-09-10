@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 int  main() {
@@ -37,4 +38,8 @@ int  main() {
         c = toupper(c);
     cout << s << endl;
     cout << "End" << endl;
+    vector<int> v2;
+    for (int i =0; i != 100; ++i)
+        v2.push_back(i);
+
 }
