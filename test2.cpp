@@ -47,10 +47,13 @@ int  main() {
     for (auto i : v)
         cout << i << " ";
     cout << endl;
-    string s("some string");
-    if (s.begin() != s.end()) {
-        auto it = s.begin();
+    string ss("some string");
+    for (auto it = ss.begin(); it != ss.end() && !isspace(*it); ++it)
         *it = toupper(*it);
-    }
-    cout << s <<endl;
+    cout << ss <<endl;
+
+    vector<string> sss(5,"some thing");
+    for (auto it = sss.cbegin(); 
+         it != sss.cend() && !it->empty(); ++it)
+         cout << *it <<endl;
 }
